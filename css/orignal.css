@@ -1,0 +1,471 @@
+@charset "UTF-8";
+
+/*å…¨ä½“*/
+body{font-family:Avenir,"Open Sans","Helvetica Neue",Helvetica,Arial,Verdana,Roboto,"æ¸¸ã‚´ã‚·ãƒƒã‚¯","Yu Gothic","æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“","YuGothic","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","Hiragino Kaku Gothic Pro","Meiryo UI","ãƒ¡ã‚¤ãƒªã‚ª",Meiryo,"ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","MS PGothic",sans-serif;font-weight:500;}
+
+/*ãƒ˜ãƒƒãƒ€ãƒ¼*/
+.fs-l-header__utility{display:block;}
+.fs-p-headerUtilityMenu,.fs-p-phoneOrder{display:none;}
+.fs-p-logo{margin-top:8px}
+.fs-p-iconcart{margin-top:10px}
+.fs-p-iconcart__amazon{position:absolute;right:60px;top:45px}
+.fs-p-headertopmsg{
+  background:#ff5f22;
+  color:#FFF;
+  font-weight: 600;
+  overflow: hidden;
+}
+.fs-p-headertopmsg-event {
+  background:rgb(86, 24, 211);
+  color:#fff;
+  font-weight: 600;
+  overflow: hidden;
+}
+.fs-p-headertopmsg span{
+  padding-left: 100%;
+  white-space : nowrap;
+  display : inline-block;
+  animation : text_scroll 15s linear infinite;
+}
+
+.fs-p-headertopmsg-event span{
+  padding-left: 100%;
+  white-space : nowrap;
+  display : inline-block;
+  animation : text_scroll 15s linear infinite;
+}
+
+@keyframes text_scroll{
+  0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+}
+
+
+.fs-l-header{padding-top:0;}
+.fs-p-headerNavBar{background:#f5f5f5;}
+.fs-p-headerNavigation__link:link,.fs-p-headerNavigation__link:visited{color:#282828;}
+/* .fs-p-logo__image{width:41px;height:48px;} */
+
+/*ã‚³ãƒ³ãƒ†ãƒ³ãƒ„*/
+.title_underline{
+  text-align:center;
+  font-weight:900;
+  background:url('https://firme.itembox.design/item/firme/line.png?d=20210411182141') no-repeat;
+  background-size:95%;
+  padding-bottom:24px;
+  background-position:center bottom;
+}
+@media only screen and (min-width: 1200px) {
+  .series-sp {
+    display: none;
+  }
+}
+
+
+.twolines{display:flex;flex-wrap: wrap;justify-content: center;}
+.twolines .bnr{width:42%;padding:3px 5px;}
+.twolines .bnr01{width:85%;padding:3px 5px;}
+.trend {margin:10px 0 30px 0;font-size: 16px;font-weight: 600;}
+.trend h3 { width:100%; height:20px; background:#C30; line-height:20px; color:#FFF; text-align:center;}
+.trend ul {display:table;margin:10px 4px 56px 4px;padding-left:0;}
+.trend ul li { display: inline-flex; padding:0 1px; width: 33%;}
+.trend ul li img { width:100%;}
+
+@media only screen and (min-width: 980px) {
+  .trend_1 {
+    width: 48% !important;;
+  }
+}
+
+
+.onelines_sale {display:flex;flex-wrap: wrap;justify-content: center; margin-bottom: 6%;}
+.onelines_sale .bnr{padding:3px 5px;}
+.data_text p {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 2rem;;
+  color:red;
+}
+
+
+.sale p:before {
+  content: "SALE"; /* ラベルの中のテキスト */
+  font-size: 16px; 
+  color: #fff; 
+  background-color: #be1414; 
+  padding: 3px 6px 0px;
+  margin-right: 2%;
+  animation: blinkEffect 1.3s ease-in-out infinite alternate;
+} 
+
+.bigsale p:before {
+  content: "BIGSALE"; /* ラベルの中のテキスト */
+  font-size: 16px; 
+  color: rgb(253, 231, 58); 
+  background-color: #be1414; 
+  padding: 3px 6px 0px;
+  margin-right: 2%;
+  animation: blinkEffect 1.3s ease-in-out infinite alternate;
+} 
+
+.coupon p:before {
+  content: "クーポンあり"; /* ラベルの中のテキスト */
+  font-size: 16px; 
+  color: #333; 
+  background-color: #eed91b;
+  padding: 3px 6px 0px;
+  margin-right: 2%;
+  animation: blinkEffect 1.3s ease-in-out infinite alternate;
+}
+
+.and-coupon p:after {
+  content: "クーポンあり"; /* ラベルの中のテキスト */
+  font-size: 16px; 
+  color: #333; 
+  background-color: #eed91b;
+  padding: 2px 6px 0px;
+  margin-left: 2%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coupon p:before {
+    content: "クーポンあり"; /* ラベルの中のテキスト */
+    display: block;
+    font-size: 14px; 
+    text-align: center;
+    margin-bottom: 2%;
+    animation: blinkEffect 1.3s ease-in-out infinite alternate;
+  }
+  .sale p:before {
+    content: "SALE"; /* ラベルの中のテキスト */
+    display: block;
+    font-size: 14px; 
+    text-align: center;
+    color: #fff; 
+    background-color: #be1414; 
+    margin-bottom: 2%;
+    animation: blinkEffect 1.3s ease-in-out infinite alternate;
+  } 
+  .bigsale p:before {
+    content: "BIG SALE"; /* ラベルの中のテキスト */
+    display: block;
+    font-size: 16px; 
+    text-align: center;
+    color: rgb(253, 231, 58); 
+    background-color: #be1414; 
+    margin-bottom: 2%;
+    animation: blinkEffect 1.3s ease-in-out infinite alternate;
+  } 
+}
+
+.and-coupon span:after {
+  content: "+"; /* ラベルの中のテキスト */
+  font-size: 16px; 
+  color: #be1414;
+  margin-left: 2%;
+}
+
+@keyframes blinkEffect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.trend a:hover {
+  text-decoration:none;
+  color: #000;
+}
+
+.sale .price,
+.bigsale .price{
+  font-size: 18px;
+  color: #be1414;
+}
+
+
+/*ãƒ•ãƒƒã‚¿ãƒ¼*/
+.fs-l-footer{border-top:none;background:#f4f4f4;}
+.fs-p-searchForm{padding:6px 20px 8px 20px;}
+.word-padding-container {display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;}
+.popularword{
+  position: relative;
+  display: block;
+  margin: 1.5em 0;
+  padding: 20px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e8eaec;
+}
+.popularword:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #e8eaec;
+}
+
+.popularword p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+}
+.popularword a{
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+.word-padding {
+  background-color: #fff;
+  padding: 0.3rem 0.4rem;
+  margin: 0.7rem 0.3rem 0 0.3rem;
+  border-radius: 2px;
+}
+
+
+.icon_popular{width:80px;margin-right:5px;}
+.fs-p-footerSnsLink{margin:20px;}
+.fs-p-footerSnsLink__item{margin:10px;}
+.fs-p-footerSnsLink__item__icon{width:32px;}
+.fs-p-footerNavigationItem__title{text-align:left;padding-bottom:15px;}
+.fs-l-footer__utility{display:block;text-align:center;font-size:12px;}
+.fs-p-footerNavigationItem:first-child{padding-top:60px;}
+.fs-p-footerNavigationItem__ctrlIcon img{margin-top:-42px}
+#icon_card{background:url(https://firme.itembox.design/item/firme/icon_card.png)no-repeat;background-size:10%;padding-left:60px;background-position:5px 4px;}
+#icon_truck{background:url(https://firme.itembox.design/item/firme/icon_truck.png)no-repeat;background-size:12%;padding-left:60px;background-position:0px 3px;}
+#icon_support{background:url(https://firme.itembox.design/item/firme/icon_support.png)no-repeat;background-size:7%;padding-left:60px;background-position:12px 0px;}
+#icon_company{background:url(https://firme.itembox.design/item/firme/icon_company.png)no-repeat;background-size:9%;padding-left:60px;background-position:6px 0px;}
+
+/* youtube iframe */
+.frame-wrapper__video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-top: 8%;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  .frame-wrapper__video iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+/* 検索フォームSP版 */
+
+.search_form-sp {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search_form-sp .popularword {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_form-sp form{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .search_form-sp {
+    display: none;
+  }
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+タブの切り替え
+*-------------------------------------------------------------------*/
+
+.tab_box .btn_area {
+	margin:0 auto;
+	display: -webkit-box;
+	display: block;
+  margin-left: 3%;
+}
+
+.tab_box .tab_btn {
+	width: 15%;
+  height: 40px;
+  float: left;
+  font-size: 14px;
+	padding: 10px 0;
+  margin: 4px;
+	color: #333;
+	/* background: #f5f7f8; */
+  border-bottom: 3px solid rgb(85, 73, 136);
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+}
+
+/* .tab_box .tab_btn + .tab_btn {
+	margin-left: 8px;
+} */
+
+.tab_box .tab_btn:hover {
+	background-color: #dce1e4;
+}
+
+.tab_box .tab_btn.active {
+    background:rgb(85, 73, 136);
+    color:#fff;
+}
+
+.tab_box .panel_area {
+    /* border: solid 1px #e3ebf3; */
+    padding: 20px;
+}
+
+.tab_box .tab_panel {
+    display:none;
+}
+
+.tab_box .tab_panel.active {
+    display:block;
+}
+
+/* -------------------------------------------------- */
+
+
+.BoxCnt3 {
+  /* max-width: 1024px; */
+  /* padding: 0 12%; */
+  margin-bottom: 6%;
+}
+
+.list_wrapper {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.item-list {
+  position: relative;
+  overflow: hidden;
+  width: 24%;
+  margin: 0 auto;
+}
+
+.item-list figure {
+  margin: 0;
+  padding: 0;
+}
+
+.item-list img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.item-list figure img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+
+.list_wrapper .item-list h4, .item-list h5 {
+  border-top: none;
+  background: none;
+  text-align: center;
+  border-bottom: 2px dotted #fff;
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .item-list {
+      width: 40%;
+      margin: 0 5% 20px;
+  }
+  .BoxCnt3 {
+      padding: 0 6%;
+  }
+  .tab_box .tab_btn {
+    width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .BoxCnt3 {
+      padding: 0 4%;
+  }
+  .list_wrapper {
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+  }
+  .item-list, .list_wrapper.sell {
+      width: 48%;
+      height: auto;
+      margin: 0;
+      margin-bottom: 20px;
+      overflow: hidden;
+  }
+  .BoxCnt3 p {
+      font-size: 1.2em;
+  }
+  .tab_box .tab_btn {
+    width: 45%;
+    font-size: 12px;
+  }
+
+}
+
+
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+padding: 50px 10px 0;
+clear: both;
+overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+.tab_item {
+  width: 30%;
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 56px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tab_item {
+      line-height: 40px;
+      width: 45%;
+      height: 40px;
+      font-size: 12px;
+      }
+  .tab_content{
+      padding-bottom: 40px;
+  }
+}
+

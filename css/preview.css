@@ -1,0 +1,45 @@
+.fs-preview-header {
+  background: #ddd;
+  color: #333;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+}
+
+.fs-preview-header__label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fs-preview-header__note {
+  flex-grow: 1;
+  font-size: 0.8em;
+  margin-right: 8px;
+}
+
+.fs-preview__button {
+  background: #fff;
+  border: 1px solid #034A96;
+  border-radius: 3px;
+  color: #034A96;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9em;
+  line-height: 0.9;
+  padding: 6px 12px;
+  transition: all 0.8s ease;
+}
+
+.fs-preview__button:hover {
+  background: #034A96;
+  color: #fff;
+}
+
+.fs-trial-header + .fs-preview-header {
+  margin-top: -16px;
+}
